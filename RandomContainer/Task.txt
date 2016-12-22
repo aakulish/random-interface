@@ -1,0 +1,31 @@
+﻿Vasya was thinking about implementing some randomized logic in his game
+project. For this purpose he requires a special container that will
+retrieve a subset of the stored items in a random order. The container only
+needs two operations - "Push" (add single item) and "Generate(n)" 
+(return a random sequence of n items from the container). When generating,
+items should NOT be removed.
+
+For example, if you execute
+Push(10)
+Push(20)
+Push(30)
+these three numbers should be stored inside the container.
+
+When the program calls "Generate(2)", the container should pick 2 random items
+and return them. These could be 10 and 20, 20 and 30, or even 20 and 20 (as
+items are not removed in the Generate method)
+
+Then Vasya thought that it would be a good idea to use this container not
+only for integers, but also for other types. Help him to solve this problem
+as well.
+
+You are provided with the interface that your container class should implement. 
+You can change methods' signature inside the interface, however don't add any 
+new elements
+
+Work out the best way to return a sequence of items without allocating
+memory for all of them
+
+Provide exceptions for negative values of n in the Generate method
+
+Write some test code in Program.cs to validate your container
